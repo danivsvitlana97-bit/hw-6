@@ -51,8 +51,54 @@
     <div data-modal class="backdrop is-hidden">
         <div  class="modal">
             <button data-modal-close class="close-btn">
-            <img src="./image/close.svg" alt="закрити" width="11" height="11">
+            <svg width="11" height="11" class="close-icon">
+                <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="currentColor"/>
+            </svg>
             </button>
+            <div class="modal-header">
+                <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+                <form class="modal-form">
+                <div class="form-field">
+                    <label for="name" class="modal-label">Ім'я</label>
+                    <div class="input-wrapper">
+                        <input type="text" name="name" id="name" class="modal-input" />
+                        <svg width="18" height="18" class="modal-icon">
+                            <use href="./image/modal.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="tel" class="modal-label">Телефон</label>
+                        <div class="input-wrapper">
+                            <input type="tel" name="tel" id="tel" class="modal-input" />
+                            <svg width="18" height="18" class="modal-icon">
+                                <use href="./image/modal.svg#icon-tel-modal"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="modal-label">Пошта</label>
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" class="modal-input" />
+                            <svg width="18" height="18" class="modal-icon">
+                                <use href="./image/modal.svg#icon-post-modal"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="message" class="modal-label">Коментар</label>
+                        <textarea name="message" id="message" class="modal-textarea" placeholder="Введіть текст"></textarea>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="privacy-input visually-hidden"
+                            required />
+                        <label for="user-privacy" class="privacy-label"><span class="custom-checkbox">
+                            <svg class="checkbox-icon" width="16" height="15">
+                                <use href="./image/checkbox.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>Погоджуюся з розсилкою та приймаю <a href="" class="privacy-link">Умови договору</a></label>
+                    <button type="submit" class="modal-submit">Відправити</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -286,16 +332,16 @@
 <footer>
   <div class="container footer1">
     <div class="footer-contact">
-    <a href="#" class="title">
+        <a href="#" class="title">
         <h1 lang="en"><span class="part1">Web</span>
             <span class="part-last">Studio</span>
         </h1>
-    </a>
+        </a>
     <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
-    <address class="contact">
+        <address class="contact">
         <a href="tel:+380961111111" class="contact-last">+38 096 111 11 11</a>
         <a href="mailto:info@devstudio.com" class="contact-last">info@devstudio.com</a>
-    </address>
+       </address>
     </div>
     <div class="footer-social">
     <p class="aside"> приєднуйтесь</p>
@@ -303,33 +349,44 @@
         <li>
             <a href="#" class="instagram">
                 <svg width="20" height="20">
-                    <use href="./image/symbol-defs.svg#instagram"></use>
+                <use href="./image/symbol-defs.svg#instagram"></use>
                 </svg>
             </a>
         </li>
         <li>
             <a href="#" class="twitter">
                 <svg width="20" height="20">
-                    <use href="./image/symbol-defs.svg#twitter"></use>
+                <use href="./image/symbol-defs.svg#twitter"></use>
                 </svg>
             </a>
-            </li>
-            <li>
-                <a href="#" class="facebook">
-                    <svg width="20" height="20">
-                        <use href="./image/symbol-defs.svg#facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="linkedin">
-                    <svg width="20" height="20">
-                        <use href="./image/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                </a>
-            </li>
+        </li>
+         <li>
+            <a href="#" class="facebook">
+                <svg width="20" height="20">
+                <use href="./image/symbol-defs.svg#facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="linkedin">
+                <svg width="20" height="20">
+                <use href="./image/symbol-defs.svg#linkedin"></use>
+                </svg>
+            </a>
+        </li>
     </ul>
     </div>
+    <div class="subscription">
+         <p class="subscription-title">Підпишіться на розсилку</p>
+    <form class="subscription-form">
+        <input type="email" name="email" id="subscription" placeholder="E-mail" />
+        <button type="submit">Підписатися
+            <svg width="24" height="24">
+                <use href="./image/send.svg#send"></use>
+            </svg>
+        </button>
+    </form>
+  </div>
   </div>
 </footer>
 <script src="./js/modal.js"></script>
