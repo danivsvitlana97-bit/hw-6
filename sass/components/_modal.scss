@@ -20,9 +20,6 @@
     padding: 15px 44px;
     box-sizing: border-box;
     max-width: 696px;
-}
-
-.headline {
     color: v.$bg-color;
 }
 
@@ -86,23 +83,19 @@
     padding-left: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    &:hover {
+        border-color: v.$primary-color;
+    }
+    &:focus {
+        outline: transparent;
+        border-color: v.$primary-color;
+    }
+    &:focus+.modal-icon {
+        fill: v.$primary-color;
+    }
 }
-
 .input-wrapper {
     position: relative;
-}
-
-.modal-input:hover {
-    border-color: v.$primary-color;
-}
-
-.modal-input:focus {
-    outline: transparent;
-    border-color: v.$primary-color;
-}
-
-.modal-input:focus+.modal-icon {
-    fill: v.$primary-color;
 }
 .modal-icon {
     position: absolute;
@@ -118,11 +111,10 @@
     width: 448px;
     height: 120px;
     resize: none;
-}
-
-.modal-textarea:focus {
-    outline: transparent;
-    border-color: v.$primary-color;
+    &:focus {
+        outline: transparent;
+        border-color: v.$primary-color;
+    }
 }
 .visually-hidden {
     position: absolute;
@@ -191,8 +183,8 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: v.$primary-color;
     cursor: pointer;
-}
-.modal-submit:hover .modal-submit:active {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
+    &:hover, &:active {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: #4d5ae5;
+    }
 }

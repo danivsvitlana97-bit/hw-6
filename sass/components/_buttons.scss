@@ -11,13 +11,14 @@
 
     color: v.$bg-color;
     background-color: v.$primary-color;
+    &:hover,
+    &:active {
+        background-color: #1976d2;
+        color: v.$bg-color;
+    }
 }
 
-.headline-btn:hover,
-.headline-btn:active {
-    background-color: #1976d2;
-    color: v.$bg-color;
-}
+
 .close-btn {
     position: absolute;
     top: 8px;
@@ -37,12 +38,12 @@
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: v.$primary-color;
+    }
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: v.$primary-color;
-}
 .btn {
     display: flex;
     justify-content: center;
@@ -65,14 +66,14 @@
     background-color: #f5f4fa;
     color: v.$text-color;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-btn:hover,
-.portfolio-btn:active {
-    box-shadow:
-        0 2px 2px 0 rgba(0, 0, 0, 0.12),
-        0 1px 2px 0 rgba(0, 0, 0, 0.08),
-        0 3px 1px 0 rgba(0, 0, 0, 0.1);
-    background: v.$primary-color;
-    color: v.$bg-color;
-    cursor: pointer;
+    &:hover,
+    &:active {
+        box-shadow:
+            0 2px 2px 0 rgba(0, 0, 0, 0.12),
+            0 1px 2px 0 rgba(0, 0, 0, 0.08),
+            0 3px 1px 0 rgba(0, 0, 0, 0.1);
+        background: v.$primary-color;
+        color: v.$bg-color;
+        cursor: pointer;
+    }
 }

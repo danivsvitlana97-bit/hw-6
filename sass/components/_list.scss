@@ -17,9 +17,9 @@
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     margin-bottom: 94px;
-}
-.list1:nth-child(4) {
-    margin-right: 0;
+   &:nth-child(4) {
+        margin-right: 0;
+    }
 }
 
 .list1 svg {
@@ -48,21 +48,16 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 94px;
-}
-
-.team-work>li {
-    box-shadow:
-        0 2px 1px 0 rgba(0, 0, 0, 0.2),
-        0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    background: v.$bg-color;
-}
-.team-work:not(:nth-child(3n + 1)) {
-    margin-left: 0;
-}
-
-.images:not(:nth-child(3n + 1)) {
-    margin-left: 0;
+    &:not(:nth-child(3n + 1)) {
+        margin-left: 0;
+    }
+    & > li {
+        box-shadow:
+            0 2px 1px 0 rgba(0, 0, 0, 0.2),
+            0 1px 1px 0 rgba(0, 0, 0, 0.14),
+            0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        background: v.$bg-color;
+    }
 }
 .images {
     display: flex;
@@ -72,8 +67,10 @@
     margin-bottom: 94px;
     margin-left: 30px;
     padding: 0;
+    &:not(:nth-child(3n + 1)) {
+        margin-left: 0;
+    }
 }
-
 .images li {
     line-height: 0;
     position: relative;
@@ -109,6 +106,7 @@ li {
     text-align: center;
     color: v.$text-dark;
 }
+
 .social-link {
     display: flex;
     justify-content: center;
@@ -120,25 +118,25 @@ li {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #ffffff10;
+        fill: #afb1b8;
+        flex-shrink: 0;
+    }
+    & a:hover,
+    & a:active {
+        background-color: v.$primary-color;
+        fill: v.$bg-color;
+    }
 }
 
-.social-link a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #ffffff10;
-    fill: #afb1b8;
-    flex-shrink: 0;
-}
 
-.social-link a:hover,
-.social-link a:active {
-    background-color: v.$primary-color;
-    fill: v.$bg-color;
-}
 .clients {
     display: flex;
     justify-content: center;
@@ -146,17 +144,21 @@ li {
     padding: 0;
     margin: 0;
     margin-bottom: 94px;
-}
-
-.clients a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border-radius: 4%;
-    border: 2px solid #afb1b8;
-    fill: #afb1b8;
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border-radius: 4%;
+        border: 2px solid #afb1b8;
+        fill: #afb1b8;
+    }
+    & a:hover,
+    & a:active {
+        border-color: v.$primary-color;
+        fill: v.$primary-color;
+    }
 }
 
 .clients a svg {
@@ -173,8 +175,3 @@ li {
     transform: scale(1.5);
 }
 
-.clients a:hover,
-.clients a:active {
-    border-color: v.$primary-color;
-    fill: v.$primary-color;
-}

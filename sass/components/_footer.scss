@@ -28,17 +28,15 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 94px;
-}
-
-.subscription-title {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: v.$bg-color;
-}
-
-.subscription-form {
-    display: flex;
-    align-items: center;
+    .subscription-title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: v.$bg-color;
+    }
+    .subscription-form {
+        display: flex;
+        align-items: center;
+    }
 }
 .subscription input {
     width: 358px;
@@ -51,11 +49,10 @@ footer {
     background: rgba(33, 150, 243, 0);
     color: v.$bg-color;
     outline: none;
-}
-
-.subscription input:focus {
-    border-color: v.$primary-color;
-    outline: none;
+    &:focus{
+        border-color: v.$primary-color;
+        outline: none;
+    }
 }
 .subscription button {
     display: inline-flex;
@@ -70,23 +67,16 @@ footer {
     background-color: v.$primary-color;
     color: v.$bg-color;
     cursor: pointer;
-}
-
-.subscription button {
-    transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:active{
+            background-color: #1976d2;
+            color: v.$bg-color;
+        }
+        & svg{
+            fill: currentColor;
+        }
 }
-
-.subscription button:hover,
-.subscription button:active {
-    background-color: #1976d2;
-    color: v.$bg-color;
-}
-.subscription button svg {
-    fill: currentColor;
-}
-
 .adress {
     text-align: left;
     margin-top: 0;
@@ -95,6 +85,7 @@ footer {
 }
 
 .contact-last {
+    text-decoration: none;
     font-style: normal;
     display: flex;
     flex-direction: column;
