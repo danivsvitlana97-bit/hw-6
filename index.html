@@ -18,6 +18,17 @@
             <h1 lang="en"><span class="part1">Web</span>
                 <span class="part2">Studio</span></h1>
         </a>
+        <button class="menu-open" aria-label="відкрити меню" type="button">
+        <svg  width="24" height="16">
+            <use href="./image/icon-menu.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="menu-container"id="mobile-menu" >
+        <button class="menu-close" aria-label="Закрити меню" type="button">
+        <svg  width="18" height="18">
+            <use href="./image/close-menu.svg#close-menu"></use>
+        </svg>
+        </button>
         <nav>
             <ul class="site-nav">
                 <li class="li-current"><a href="#" class="nav current">Студія</a></li>
@@ -40,8 +51,15 @@
                  </svg>
                 +38 096 111 11 11</a>
             </div>
+            <ul class="menu-social-name">
+                <li href="#">Instagram</li>
+                <li href="#">Twitter</li>
+                <li href="#">Facebook</li>
+                <li href="#">LinkedIn</li>
+            </ul>
             </div>
             </div>
+        </div>
     </header>
 <main>
 <section class="hero">
@@ -131,7 +149,7 @@
     <p class="text">Значимість цих проблем настільки очевидна,що реалізація планових завдань</p>
      </section>
 </div>
-<div class="container">
+<div class="container images-team">
   <section>
     <h2 class="team">ЧИМ МИ ЗАЙМАЄМОСЬ</h2>
     <ul class="images">
@@ -337,10 +355,10 @@
         </h1>
         </a>
     <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
+        <a href="mailto:info@devstudio.com" class="contact-last">info@devstudio.com</a>
+        </address>
         <address class="contact">
         <a href="tel:+380961111111" class="contact-last">+38 096 111 11 11</a>
-        <a href="mailto:info@devstudio.com" class="contact-last">info@devstudio.com</a>
-       </address>
     </div>
     <div class="footer-social">
     <p class="aside"> приєднуйтесь</p>
@@ -392,5 +410,6 @@
   </div>
 </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
