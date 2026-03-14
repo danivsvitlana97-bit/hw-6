@@ -1,0 +1,101 @@
+@use '../utils/variables' as v;
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: v.$clr-bg-main;
+}
+
+.footer1 {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact {
+    margin-right: 70px;
+}
+
+.footer-contact h1 {
+    margin-bottom: 28px;
+}
+
+.footer-contact p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: v.$bg-color;
+}
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 94px;
+    .subscription-title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: v.$bg-color;
+    }
+    .subscription-form {
+        display: flex;
+        align-items: center;
+    }
+}
+.subscription input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(33, 150, 243, 0);
+    color: v.$bg-color;
+    outline: none;
+    &:focus{
+        border-color: v.$primary-color;
+        outline: none;
+    }
+}
+.subscription button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    background-color: v.$primary-color;
+    color: v.$bg-color;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:active{
+            background-color: #1976d2;
+            color: v.$bg-color;
+        }
+        & svg{
+            fill: currentColor;
+        }
+}
+.adress {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: v.$bg-color;
+}
+
+.contact-last {
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    color: #ffffff60;
+}
+
+.aside {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: v.$bg-color;
+}

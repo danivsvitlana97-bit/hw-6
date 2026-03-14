@@ -1,0 +1,124 @@
+@use '../utils/variables' as v;
+html{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: v.$bg-color;
+    color: v.$text-color;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.title {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 1px;
+    h1 {
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+}
+.part1 {
+    color: v.$primary-color;
+}
+
+.part2 {
+    color: #000000;
+}
+
+.part-last {
+    color: v.$bg-color;
+}
+.site-nav {
+    display: flex;
+    list-style: none;
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.site-nav li+li {
+    margin-left: 50px;
+}
+
+.nav {
+    display: block;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: v.$text-color;
+    &:hover,
+    &:active {
+        color: v.$primary-color;
+        cursor: pointer;
+    }
+}
+
+.li-current {
+    position: relative;
+}
+.nav.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 0;
+    height: 4px;
+    background-color: v.$primary-color;
+}
+
+.div {
+    margin: 0;
+    padding: 0;
+}
+
+.contact1 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    color: v.$text-dark;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:active {
+        color: v.$primary-color;
+    }
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contact-item svg {
+    scale: 1.5;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
