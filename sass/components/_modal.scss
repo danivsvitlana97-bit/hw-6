@@ -190,6 +190,15 @@
   }
 }
 @media screen and (max-width: 1599px) {
+  .hero {
+    background-image:
+      linear-gradient(
+        to right,
+        rgba(164, 30, 102, 0.4),
+        rgba(105, 99, 150, 0.4)
+      ),
+      url(../../image/hero-768.jpg);
+  }
   .modal {
     width: 450px;
     height: 609px;
@@ -210,6 +219,15 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .hero {
+    background-image:
+      linear-gradient(
+        to right,
+        rgba(164, 30, 102, 0.4),
+        rgba(105, 99, 150, 0.4)
+      ),
+      url(../../image/hero-480.jpg);
+  }
   .modal {
     position: absolute;
     top: 93px;
